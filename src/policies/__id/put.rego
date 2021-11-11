@@ -1,7 +1,7 @@
 package peoplefinder.PUT.api.users.__id
 
 import input.policy.path
-import input.user.attributes
+import input.user.attributes.roles as user_roles
 
 default allowed = false
 
@@ -11,7 +11,7 @@ default enabled = false
 
 allowed {
 	some index
-	data.roles.roles[attributes.roles[index]].perms[path].allowed
+	data.roles.roles[user_roles[index]].perms[path].allowed
 }
 
 allowed {
@@ -20,10 +20,10 @@ allowed {
 
 visible {
 	some index
-	data.roles.roles[attributes.roles[index]].perms[path].visible
+	data.roles.roles[user_roles[index]].perms[path].visible
 }
 
 enabled {
 	some index
-	data.roles.roles[attributes.roles[index]].perms[path].enabled
+	data.roles.roles[user_roles[index]].perms[path].enabled
 }
