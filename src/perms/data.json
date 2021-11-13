@@ -6,9 +6,6 @@
         "peoplefinder.POST.api.users": {
             "description": "create a new user"
         },
-        "peoplefinder.IMPERSONATE.api.users.__id": {
-            "description": "impersonate a user"
-        },
         "peoplefinder.GET.api.users.__id": {
             "description": "get a user's information"
         },
