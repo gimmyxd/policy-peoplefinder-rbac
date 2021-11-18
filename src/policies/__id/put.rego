@@ -11,7 +11,7 @@ default enabled = false
 
 allowed {
 	some index
-	data.roles.roles[user_roles[index]].perms[path].allowed
+	data.roles[user_roles[index]].perms[path].allowed
 }
 
 allowed {
@@ -20,10 +20,10 @@ allowed {
 
 visible {
 	some index
-	data.roles.roles[user_roles[index]].perms[path].visible
+	data.roles[user_roles[index]].perms[path].visible
 }
 
 enabled {
 	some index
-	data.roles.roles[user_roles[index]].perms[path].enabled
+	data.roles[user_roles[index]].perms[path].enabled
 }
